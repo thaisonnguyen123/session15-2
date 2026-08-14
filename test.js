@@ -1,8 +1,11 @@
-let arr = ['c','s','c','2','6','1'];
- let result = '';
+let arr = ['a', '1', 'b', '5', 'c', '9'];
 
- for ( let i = arr.length - 1; i >=0; i --) {
-  result += arr[i];
- }
+let count = 0;
 
- console.log(result)
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= '0' && arr[i] <= '9') {
+        count++;
+    }
+}
+
+console.log("Có " + count + " ký tự số.");
